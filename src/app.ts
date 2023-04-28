@@ -1,11 +1,13 @@
-import axios from 'axios';
+import axios from 'axios'
+import dotenv from 'dotenv'
+dotenv.config();
 
 let searchWord = '닥터지'
 const maxResults = 10
 
 const apiClient = axios.create({
   baseURL: "https://www.googleapis.com/youtube/v3",
-  params: { key: 'AIzaSyBy_ovayCXpzRXhBQ5Q5Bgb04UmLw2lekw' },
+  params: { key: process.env.API_KEY },
 });
 
 const videoIds = async () => {

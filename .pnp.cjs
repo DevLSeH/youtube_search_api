@@ -30,6 +30,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@types/node", "npm:18.16.2"],\
             ["axios", "npm:1.4.0"],\
+            ["dotenv", "npm:16.0.3"],\
             ["ts-node", "virtual:695b03d06a2921b092ceca5b60524c1f0f215523200fc84d0e35dbc5bb7119f73e3fb3d804b75e63879ce0cfb8f7ac542fcd57f709709fbc2766744b69fdf7b4#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=85af82"]\
           ],\
@@ -205,6 +206,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["dotenv", [\
+        ["npm:16.0.3", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.0.3-4cc29121dc-afcf03f373.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:16.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["follow-redirects", [\
         ["npm:1.15.2", {\
           "packageLocation": "./.yarn/cache/follow-redirects-npm-1.15.2-1ec1dd82be-faa66059b6.zip/node_modules/follow-redirects/",\
@@ -355,6 +365,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["youtube_search", "workspace:."],\
             ["@types/node", "npm:18.16.2"],\
             ["axios", "npm:1.4.0"],\
+            ["dotenv", "npm:16.0.3"],\
             ["ts-node", "virtual:695b03d06a2921b092ceca5b60524c1f0f215523200fc84d0e35dbc5bb7119f73e3fb3d804b75e63879ce0cfb8f7ac542fcd57f709709fbc2766744b69fdf7b4#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A5.0.4#~builtin<compat/typescript>::version=5.0.4&hash=85af82"]\
           ],\
