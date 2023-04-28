@@ -43,6 +43,7 @@ const videoIds = async (keyWord: string, maxResults: number) => {
 
     }
     console.log(result);
+    return result;
 
   } catch (error) {
     console.error(error);

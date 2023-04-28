@@ -5,6 +5,7 @@
   "main": "src/app.js",
   "author": "shaan",
   "license": "MIT",
+  "repository": "https://github.com/DevLSeH/youtube_search_api.git",
   "scripts": {
     "build": "tsc",
     "start": "node ./bin/app.js",

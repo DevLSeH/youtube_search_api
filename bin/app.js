@@ -45,6 +45,7 @@ const videoIds = (keyWord, maxResults) => __awaiter(void 0, void 0, void 0, func
             result[i] = videoResult;
         }
         console.log(result);
+        return result;
     }
     catch (error) {
         console.error(error);
