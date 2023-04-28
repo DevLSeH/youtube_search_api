@@ -1,0 +1,22 @@
+{
+  "name": "youtube_search",
+  "version": "1.0.0",
+  "description": "to call youtube api in node.js&typeScript",
+  "main": "src/app.js",
+  "author": "shaan",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./bin/app.js",
+    "dev": "ts-node ./src/app.ts"
+  },
+  "dependencies": {
+    "@types/node": "^18.16.2",
+    "axios": "^1.4.0",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "packageManager": "yarn@3.5.0"
+}
