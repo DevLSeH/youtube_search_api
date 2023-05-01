@@ -1,5 +1,5 @@
-import axios from 'axios'
-import dotenv from 'dotenv'
+import axios from "axios"
+import dotenv from "dotenv"
 dotenv.config();
 
 //video 정보를 저장할 객체 타입 지정
@@ -18,13 +18,14 @@ const apiClient = axios.create({
 //api 요청에 필요한 키워드와 검색 수를 인자로 설정
 const videoIds = async (keyWord: string, maxResults: number) => {
   try {
-    // /search url로 get 메쏘드로 요청 전송
+    // "/search" url로 get 메쏘드로 요청 전송
     const response = await apiClient.get("/search", {
       params: {
-        part: 'snippet', //* snippet 정보를 함께 받아옴, 이 안에는 영상의 제목 등 상세 정보가 포함됨
+        // snippet 정보를 함께 받아옴, 이 안에는 영상의 제목 등 상세 정보가 포함됨
+        part: "snippet",
         q: keyWord,
-        type: 'video',
-        order: 'viewCount',
+        type: "video",
+        order: "viewCount",
         maxResults: maxResults
       },
     })
@@ -60,4 +61,4 @@ const videoIds = async (keyWord: string, maxResults: number) => {
 };
 
 //api 호출 함수
-videoIds('닥터지 진정깊은 수분크림', 3);
+videoIds("닥터지 진정깊은 수분크림", 3);
